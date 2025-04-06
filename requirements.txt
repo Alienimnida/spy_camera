@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+opencv-python
+pillow
+numpy
+python-multipart  # for File uploads in FastAPI
+pandas
+
