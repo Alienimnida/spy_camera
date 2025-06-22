@@ -1,9 +1,10 @@
 fastapi
 uvicorn
 torch
-opencv-python
+seaborn
+opencv-python-headless
 pillow
 numpy
-python-multipart  # for File uploads in FastAPI
+python-multipart
 pandas
-
+requests
