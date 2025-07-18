@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 import torch
@@ -8,6 +9,14 @@ from pathlib import Path
 import base64
 
 app = FastAPI(title="YOLOv5 Object Detection API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Directories
 BASEPATH = "uploads"
