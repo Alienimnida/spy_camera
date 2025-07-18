@@ -44,7 +44,7 @@ torch.load = patched_torch_load
 
 # Load YOLOv5 model
 print("Loading YOLOv5 model...")
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', trust_repo=True)
+model = torch.hub.load('ultralytics/yolov5', 'yolov5n', trust_repo=True)
 print("Model loaded successfully!")
 
 def encode_image_to_base64(image_path):
